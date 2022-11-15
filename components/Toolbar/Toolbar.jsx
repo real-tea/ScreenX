@@ -1,4 +1,5 @@
 import React from 'react'
+import { ArrowUpTrayIcon } from "@heroicons/react/24/outline"
 
 const Toolbar = ({ imagechange , img }) => {
   return (
@@ -10,10 +11,21 @@ const Toolbar = ({ imagechange , img }) => {
               <button
                 className="transform p-4 flex font-semibold text-lg justify-center items-center px-8 rounded-full bg-purple-300 text-yellow-100 ease-in-out hover:bg-purple-300/90 group outline-none ring ring-purple-800 dark:ring-0"
                 onClick={()=>document.getElementById("file_select").click()}>
-                Upload ScreenShot ⚡
+                
+                <ArrowUpTrayIcon className="w-6 mr-2 stroke-[2] group-hover:-rotate-3 group-active:rotate-3"/>
+
+                Upload ScreenShot⚡
               </button>
             )}
           </div>
+
+          <input
+            id="file_select"
+            type="file"
+            className="hidden"
+            onChange={imagechange}
+            accept="image/*"
+          />
       </div>
     </>
   )
