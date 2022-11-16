@@ -1,7 +1,8 @@
 import React from 'react'
 import { ArrowUpTrayIcon } from "@heroicons/react/24/outline"
+import Download from "./tools/Download"
 
-const Toolbar = ({ imagechange , img }) => {
+const Toolbar = ({ onImageChange , img }) => {
   return (
     <>
       <div className="fixed bottom-0 w-full flex justify-center z-10 py-5">
@@ -23,7 +24,7 @@ const Toolbar = ({ imagechange , img }) => {
             id="file_select"
             type="file"
             className="hidden"
-            onChange={imagechange}
+            onChange={onImageChange}
             accept="image/*"
           />
       </div>

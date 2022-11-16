@@ -12,8 +12,11 @@ export default function Home() {
 
   const [img , setImg] = useState();
 
-  const imagechange = () => {
-    alert("component rendered")
+  const onImageChange = (e) => {
+    if(e.target.files.length!==0){
+      const [file] = e.target.files;
+      setImg(URL.createObjectURL(file));
+    }  
   }
 
   return (
@@ -28,7 +31,7 @@ export default function Home() {
       <main className="min-h-[100vh]">
         <Header/>
         <Parent img =  {img}/>
-        <Toolbar onImageChange= {imagechange} img={img}/>
+        <Toolbar onImageChange= {onImageChange} img={img}/>
       </main>
       
     </>
