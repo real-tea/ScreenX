@@ -36,7 +36,7 @@ const Download = () => {
           downloadFormat,
           size / height
         ).then((dataUri) => {
-          link.download = `spiffy.${downloadFormat}`;
+          link.download = `screenx.${downloadFormat}`;
           link.href = dataUri;
           link.click();
           toast.dismiss("start");
@@ -50,7 +50,7 @@ const Download = () => {
     if(isVisible){
       document.getElementById(downloadFormat).checked = true;
     }
-  })
+  },[isVisible]);
 
   return (
     <>

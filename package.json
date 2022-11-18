@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.13",
+    "get-image-colors": "^4.0.1",
     "html-to-image": "^1.10.8",
     "image-converter-pro": "^1.0.2",
     "next": "13.0.2",
@@ -17,7 +18,8 @@
     "react-click-away-listener": "^2.2.2",
     "react-dom": "18.2.0",
     "react-draggable": "^4.4.5",
-    "react-toastify": "^9.1.1"
+    "react-toastify": "^9.1.1",
+    "rgb2hex": "^0.2.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
