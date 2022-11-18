@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArrowUpTrayIcon } from "@heroicons/react/24/outline"
-import Download from "./tools/Download"
+import Download from "./Tool/Download"
 
 const Toolbar = ({ onImageChange , img }) => {
   return (

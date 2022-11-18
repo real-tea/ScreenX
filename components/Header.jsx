@@ -3,7 +3,7 @@ import { SunIcon , MoonIcon , ArrowTopRightOnSquareIcon} from '@heroicons/react/
 
 const Header = () => {
 
-    const [ isDarkMode , setIsDarkMode ] = useState(false); //darkMode State
+    const [ isDarkMode , setIsDarkMode ] = useState(true); //darkMode State
 
     const ChangeTheme=()=>{
       alert(isDarkMode);
