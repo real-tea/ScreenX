@@ -2,6 +2,7 @@ import React from 'react'
 import { ArrowUpTrayIcon } from "@heroicons/react/24/outline"
 import Download from "./Tool/Download"
 import Background from "./Tool/Bakckground";
+import Resize from "./Tool/Resize";
 
 const Toolbar = ({ onImageChange , img }) => {
   return (
@@ -38,6 +39,7 @@ const Toolbar = ({ onImageChange , img }) => {
                 </button>
                 <Download/>
                 <Background img={img}/>
+                <Resize/>
                 </div>
               </div>
               )
