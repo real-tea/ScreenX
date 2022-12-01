@@ -3,6 +3,9 @@ import { ArrowUpTrayIcon } from "@heroicons/react/24/outline"
 import Download from "./Tool/Download"
 import Background from "./Tool/Bakckground";
 import Resize from "./Tool/Resize";
+import Corner from "./Tool/Corner";
+import Shadow from "./Tool/Shadow";
+import Padding from "./Tool/Padding";
 
 const Toolbar = ({ onImageChange , img }) => {
   return (
@@ -40,6 +43,9 @@ const Toolbar = ({ onImageChange , img }) => {
                 <Download/>
                 <Background img={img}/>
                 <Resize/>
+                <Corner/>
+                <Shadow/>
+                <Padding/>
                 </div>
               </div>
               )

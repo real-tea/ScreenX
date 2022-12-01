@@ -33,7 +33,7 @@ const Header = () => {
           <a href="www.github.com/real-tea"
              className="flex justify-center items-center p-3 px-6 bg-purple-300 text-purple-900 font-bold rounded-full shadow-lg hover:shadow-yellow-300/30 sm:hover:scale-[1.02] transition-all ease-in-out duration-100 scale-75 -mr-6 md:mr-0 sm:scale-100 outline-none ring ring-yellow-300 dark:ring-0"
              target="_blank">
-            Github
+            GH
           </a>
         </div>
     </div>
