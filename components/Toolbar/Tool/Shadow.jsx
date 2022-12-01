@@ -19,9 +19,9 @@ const Shadow = () => {
         className="flex flex-col justify-center items-center rounded-xl cursor-pointer active:scale-95 transform transition-all ease-in-out duration-200"
         onClick={() => setIsVisible(true)}
       >
-        <button className="transform p-3 flex flex-col shadow font-semibold text-xs justify-center items-center rounded-full bg-zinc-300 text-zinc-900 ease-in-out duration-200 hover:bg-zinc-300/90 group outline-none active:scale-95 ring ring-zinc-900 dark:ring-0">
+        <button className="transform p-3 flex flex-col shadow font-semibold text-xs justify-center items-center rounded-full bg-zinc-300 text-red-800 ease-in-out duration-200 hover:bg-red-300/90 group outline-none active:scale-95 ring ring-zinc-900 dark:ring-0">
           <RectangleStackIcon className="w-7 stroke-[1.5]" />
-          <span className="absolute -bottom-6 opacity-70 group-hover:opacity-100 dark:text-zinc-300 text-zinc-900">
+          <span className="absolute -bottom-6 opacity-70 group-hover:opacity-100 dark:text-green-700 text-red-900">
             Shadow
           </span>
         </button>
